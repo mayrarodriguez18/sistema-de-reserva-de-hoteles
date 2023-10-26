@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.habitacion {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    float: left;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.habitacion.reservada {
+    background-color: #88ff88;
+}
+
+.reservar-btn {
+    display: block;
+    margin-top: 10px;
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Estilos CSS para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #58f888;
+    width: 60%;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20% auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-content #cerrarModal{
+    background-color: rgb(255, 114, 114);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
