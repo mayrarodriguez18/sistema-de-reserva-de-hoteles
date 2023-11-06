@@ -11,23 +11,27 @@
     
     <input type="text" id="buscador" placeholder="Buscar habitaciones">
     <div id="habitaciones-container"></div> <!-- Contenedor para las habitaciones -->
-
     <div class="modal" id="reservaModal">
         
         <div class="modal-content">
-            
-            <button id="cerrarModal">Cerrar</button>
-            <h2>Reserva de Habitación</h2>
-            
+            <h2>Ingrese sus datos</h2>
             <form id="reservaForm">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" required>
+                <input type="text" id="email" required>
+                <label for="fecha_entrada">Fecha de Entrada:</label>
+                <input type="date" id="fecha_entrada" name="fecha_entrada" required>
+                <label for="fecha_salida">Fecha de Salida:</label>
+                <input type="date" id="fecha_salida" name="fecha_salida" required>
                 <button type="submit">Confirmar Reserva</button>
+                <button id="cerrarModal" type="reset">Cancelar Reserva</button>
+               
             </form>
         </div>
     </div>
+  
+
 
     <script src="./habitacion.js"></script>
 </body>

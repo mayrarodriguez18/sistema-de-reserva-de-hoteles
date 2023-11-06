@@ -1,5 +1,5 @@
 // Definir la información de las habitaciones en un array JavaScript
- const habitaciones = [
+const habitaciones = [
     { id: "101", imagen: "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=600", precio: 100, tipo: "Estándar", reservada: false },
     { id: "102",imagen: "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&cs=tinysrgb&w=600", precio: 150, tipo: "Suite", reservada: false },
     { id: "103", imagen: "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=600", precio: 80, tipo: "Estándar", reservada: false },
@@ -84,8 +84,7 @@ buscadorInput.addEventListener('input', function() {
         const divHabitacion = habitacionInfo.div;
         const nombreHabitacion = habitacionInfo.tipo.toLowerCase();
         if (nombreHabitacion.includes(terminoBusqueda) || habitacionInfo.id.includes(terminoBusqueda)) {
-            divHabitacion.style.display = 'block',
-            divHabitacion.style.width = '48%';
+            divHabitacion.style.display = 'block';
         } else {
             divHabitacion.style.display = 'none';
         }
